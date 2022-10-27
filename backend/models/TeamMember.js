@@ -1,8 +1,8 @@
-const Sequelize = require('sequelize');
+const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize({
-  dialect: 'sqlite',
-  storage: './database.sqlite3'
+  dialect: "sqlite",
+  storage: "./database.sqlite3",
 });
 
 class TeamMember extends Sequelize.Model {}
@@ -11,35 +11,35 @@ TeamMember.init(
     // attributes
     firstName: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: false,
     },
     lastName: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: false,
     },
     title: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: false,
     },
     story: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: false,
     },
     favoriteColor: {
-      type: Sequelize.STRING
+      type: Sequelize.STRING,
     },
     photoUrl: {
-      type: Sequelize.STRING
-    }
+      type: Sequelize.STRING,
+    },
   },
   {
     sequelize,
-    modelName: 'TeamMembers'
+    modelName: "TeamMembers",
     // options
   }
 );
 
 module.exports = {
   sequelize,
-  TeamMember
+  TeamMember,
 };

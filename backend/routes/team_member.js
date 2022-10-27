@@ -1,5 +1,5 @@
 const express = require('express');
-const { TeamMember } = require('./model');
+const { TeamMember } = require('../models/TeamMember');
 
 const app = express();
 
