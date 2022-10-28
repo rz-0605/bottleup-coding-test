@@ -21,6 +21,20 @@
   text-align: center;
 }
 
+.join-btn {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(52, 102, 242);
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.join-btn-text {
+  color: white;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 1080px) {
   .app {
     margin-bottom: 44px;

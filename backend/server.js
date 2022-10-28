@@ -1,9 +1,10 @@
 const express = require("express");
 
-const teamMemberRoutes = require("./routes/team_member")
+const teamMemberRoutes = require("./routes/team_member");
 
-const app = express()
-app.use("/", teamMemberRoutes)
+const app = express();
+app.use(express.json());
+app.use("/", teamMemberRoutes);
 
 init();
 

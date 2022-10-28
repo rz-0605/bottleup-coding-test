@@ -1,4 +1,4 @@
-const { TeamMember } = require("../backend/model");
+const { TeamMember } = require("../backend/models/TeamMember");
 
 /* WARNING THIS WILL DROP THE CURRENT DATABASE */
 seed();
